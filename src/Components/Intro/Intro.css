@@ -1,0 +1,43 @@
+.intro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+.intro img {
+  margin-top: 50px;
+  border-radius: 500px;
+  width: 450px;
+  /* height: 500px; */
+}
+
+.intro h1 {
+  text-align: center;
+  width: 70%;
+  font-size: 90px;
+  font-weight: 600;
+}
+.intro p {
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+}
+.intro-action {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  gap: 25px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.intro-resume {
+  padding: 25px 75px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+.intro-resume:hover {
+  border-color: blue;
+}
