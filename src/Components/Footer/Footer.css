@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  /* margin: 30px 170px; */
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.icons a {
+  color: white;
+}
+.icons a i {
+  transition: transform 0.2s ease;
+  font-size: 50px;
+}

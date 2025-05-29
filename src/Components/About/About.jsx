@@ -4,7 +4,7 @@ import Profile from "../../assets/Profile.jpg";
 
 function About() {
   return (
-    <div className="about">
+    <div id="about" className="about">
       <div className="about-title">
         <h1>About me</h1>
       </div>

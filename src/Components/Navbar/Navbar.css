@@ -11,3 +11,20 @@
   gap: 60px;
   font-size: 20px;
 }
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.nav-menu li a:hover {
+  color: blue;
+  text-decoration: underline;
+  transform: translate(1.2);
+}

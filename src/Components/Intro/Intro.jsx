@@ -4,7 +4,7 @@ import profile from "../../assets/Profile.jpg";
 
 function Intro() {
   return (
-    <div className="intro">
+    <div id="home" className="intro">
       <img src={profile} alt="profile" />
       <h1>I'm Asandile Langeni, Fullstack developer</h1>
       <p>
