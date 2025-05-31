@@ -1,7 +1,49 @@
-import React from "react";
+import { useState } from "react";
 import "./Contact.css";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    console.log("Submitting form with data:", formData);
+
+    try {
+      const response = await fetch("https://formspree.io/f/manogajv", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      console.log("Response:", data);
+
+      if (response.ok) {
+        alert("Form successfully submitted!");
+        setFormData({ fullName: "", email: "", message: "" });
+      } else {
+        alert("Error submitting form. Please try again.");
+      }
+    } catch (error) {
+      console.error("Fetch error:", error);
+      alert("Network error. Please check your connection.");
+    }
+  };
+
   return (
     <div id="contact" className="contact">
       <div className="contact-title">
@@ -18,40 +60,49 @@ function Contact() {
             </div>
             <div className="contact-detail">
               <i className="bx bxs-phone"></i>
-              <p>0676555678</p>
+              <p>067 6555 678</p>
             </div>
             <div className="contact-detail">
               <i className="bx bxs-map"></i>
-              Khayelitsha, Cape Town Western Cape
+              <p>Khayelitsha, Cape Town, Western Cape</p>
             </div>
           </div>
         </div>
-        <form
-          action="https://formspree.io/f/manogajv"
-          method="POST"
-          className="contact-right"
-        >
-          <label htmlFor="">Your Name</label>
+
+        <form onSubmit={handleSubmit} className="contact-right">
+          <label htmlFor="fullName">Your Name</label>
           <input
             type="text"
-            placeholder="Enter Your name"
-            name="name"
+            id="fullName"
+            name="fullName"
+            placeholder="Enter your name"
+            value={formData.fullName}
+            onChange={handleChange}
             required
           />
-          <label htmlFor="">Your Email</label>
+
+          <label htmlFor="email">Your Email</label>
           <input
             type="email"
-            placeholder="Enter your email"
+            id="email"
             name="email"
+            placeholder="Enter your email"
+            value={formData.email}
+            onChange={handleChange}
             required
           />
-          <label htmlFor="">Write your message here</label>
+
+          <label htmlFor="message">Write your message here</label>
           <textarea
+            id="message"
             name="message"
             rows="8"
-            id="textarea"
             placeholder="Enter your message"
+            value={formData.message}
+            onChange={handleChange}
+            required
           ></textarea>
+
           <button type="submit" className="contact-submit">
             Submit now
           </button>

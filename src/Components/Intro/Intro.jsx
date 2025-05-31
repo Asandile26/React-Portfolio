@@ -11,7 +11,7 @@ function Intro() {
         I am a fullstack developer with a year working experience as fullstack
         developer{" "}
       </p>
-      <div className="intro-ation">
+      <div className="intro-action">
         <div className="intro-resume">My Resume</div>
       </div>
     </div>

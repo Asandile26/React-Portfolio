@@ -24,8 +24,8 @@
   gap: 30px;
 }
 .contact-left h1 {
-  font-size: 80px;
-  font-weight: 700;
+  font-size: 70px;
+  font-weight: 600;
 }
 .contact-left p {
   max-width: 550px;
@@ -59,7 +59,7 @@
 
 .contact-right input {
   border: none;
-  width: 700px;
+  width: 550px;
   height: 78px;
   padding-left: 20px;
   border-radius: 4px;
@@ -70,7 +70,7 @@
 }
 
 .contact-right textarea {
-  width: 650px;
+  width: 500px;
   border: none;
   padding: 25px;
   background: #32323c;
