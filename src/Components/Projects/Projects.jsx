@@ -1,5 +1,5 @@
 import React from "react";
-import "../Projects/project.css";
+import "../Projects/Projects.css";
 import projects from "../../assets/ProjectsData";
 
 function Projects() {
