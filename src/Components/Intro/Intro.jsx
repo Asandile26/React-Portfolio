@@ -12,7 +12,14 @@ function Intro() {
         developer{" "}
       </p>
       <div className="intro-action">
-        <div className="intro-resume">My Resume</div>
+        <a
+          href="https://drive.google.com/file/d/1kifeqib-6y1A1xgbDz5uDmIG-cHB7xZv/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none" }}
+        >
+          <div className="intro-resume">My Resume</div>
+        </a>
       </div>
     </div>
   );

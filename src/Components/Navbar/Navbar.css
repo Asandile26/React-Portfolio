@@ -24,7 +24,7 @@
 }
 
 .nav-menu li a:hover {
-  color: blue;
+  color: #094585;
   text-decoration: underline;
   transform: translate(1.2);
 }

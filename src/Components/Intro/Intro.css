@@ -37,8 +37,12 @@
   cursor: pointer;
   margin-bottom: 16px;
 }
+.intro-action a {
+  text-decoration: none;
+  color: #fff;
+}
 .intro-resume:hover {
-  border-color: blue;
+  border-color: #094585;
 }
 @media (max-width: 768px) {
   .intro img {
