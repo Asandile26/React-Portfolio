@@ -1,5 +1,5 @@
 import React from "react";
-import "./skills.css";
+import "../Skills/Skills.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Skills() {
