@@ -9,5 +9,5 @@ body {
   background: #161513;
   color: #fff;
   font-family: "outfit";
-  overflow-x: hidden;
+  overflow: auto;
 }
