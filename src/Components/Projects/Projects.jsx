@@ -27,7 +27,7 @@ function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button>Live Demo</button>
+                  <button>Demo</button>
                 </a>
               </div>
             </div>
