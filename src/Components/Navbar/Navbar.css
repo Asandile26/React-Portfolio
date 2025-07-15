@@ -39,7 +39,7 @@
     width: 100%;
   }
   .navbar {
-    margin: 20px 50px;
+    margin: 20px 0px;
     width: 100%;
   }
   .nav-mob-open {
@@ -51,7 +51,7 @@
     display: block;
     position: relative;
     top: 30px;
-    left: 290px;
+    left: 260px;
     width: 30px;
   }
   .nav-menu {
