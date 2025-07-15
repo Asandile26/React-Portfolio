@@ -84,7 +84,6 @@
   .my-projects {
     gap: 50px;
     margin: 50px 30px;
-    align-items: start;
   }
   .project-title h1 {
     padding: 0;
