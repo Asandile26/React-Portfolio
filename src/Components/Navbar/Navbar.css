@@ -36,11 +36,11 @@
 }
 @media (max-width: 768px) {
   body {
-    width: 100%;
+    width: -webkit-fill-available;
   }
   .navbar {
     margin: 20px 0px;
-    width: 100%;
+    padding: 20px;
   }
   .nav-mob-open {
     display: block;

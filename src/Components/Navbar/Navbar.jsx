@@ -31,16 +31,24 @@ function Navbar() {
           className="nav-mob-close"
         />
         <li>
-          <AnchorLink href="#home">Home</AnchorLink>
+          <AnchorLink href="#home" onClick={closeMenu}>
+            Home
+          </AnchorLink>
         </li>
         <li>
-          <AnchorLink href="#about">About</AnchorLink>
+          <AnchorLink href="#about" onClick={closeMenu}>
+            About
+          </AnchorLink>
         </li>
         <li>
-          <AnchorLink href="#skills">Skills</AnchorLink>
+          <AnchorLink href="#skills" onClick={closeMenu}>
+            Skills
+          </AnchorLink>
         </li>
         <li>
-          <AnchorLink href="#projects">Projects</AnchorLink>
+          <AnchorLink href="#projects" onClick={closeMenu}>
+            Projects
+          </AnchorLink>
         </li>
         <li>
           <AnchorLink href="#contact">Contact</AnchorLink>
