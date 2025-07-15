@@ -83,7 +83,7 @@
 @media (max-width: 768px) {
   .my-projects {
     gap: 50px;
-    margin: 50px 70px;
+    margin: 50px 30px;
     align-items: start;
   }
   .project-title h1 {

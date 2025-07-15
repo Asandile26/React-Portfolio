@@ -37,8 +37,7 @@
 @media (max-width: 768px) {
   .about {
     gap: 80px;
-    margin: 50px 70px;
-    align-items: start;
+    margin: 20px 0px;
   }
   .about-title h1 {
     font-size: 40px;
@@ -53,5 +52,6 @@
   .about-para {
     font-size: 18px;
     line-height: 32px;
+    margin: 20px;
   }
 }
