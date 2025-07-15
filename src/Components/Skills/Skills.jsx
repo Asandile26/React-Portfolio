@@ -64,7 +64,7 @@ function Skills() {
         </div>
 
         <div className="soft-skills">
-          <h2 className="sub-title1">Soft Skills</h2>
+          <h2 className="sub-title2">Soft Skills</h2>
           <ul className="list">
             <li>Creativity</li>
             <li>Communication</li>
