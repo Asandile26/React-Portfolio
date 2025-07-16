@@ -51,7 +51,9 @@ function Navbar() {
           </AnchorLink>
         </li>
         <li>
-          <AnchorLink href="#contact">Contact</AnchorLink>
+          <AnchorLink href="#contact" onClick={closeMenu}>
+            Contact
+          </AnchorLink>
         </li>
       </ul>
     </div>
